@@ -1,0 +1,36 @@
+{
+  "name": "material-palette",
+  "version": "0.9.0",
+  "description": "Generate material palettes for your colors",
+  "main": "index.js",
+  "jsnext:main": "index.m.js",
+  "author": "Leo Di Donato <leodidonato@gmail.com> (http://github.com/leodido)",
+  "repository": "leodido/material-palette",
+  "bugs": {
+    "url": "https://github.com/leodido/material-palette/issues"
+  },
+  "homepage": "https://github.com/leodido/material-palette",
+  "dependencies": {},
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "babel-eslint": "^6.0.2",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "eslint": "^2.8.0",
+    "eslint-config-defaults": "^9.0.0",
+    "rollup": "^0.25.8",
+    "rollup-plugin-babel": "^2.4.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-defaults",
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "globals": {},
+    "env": {
+      "es6": true
+    }
+  }
+}
