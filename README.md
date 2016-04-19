@@ -2,9 +2,9 @@
 
 > **Generates material palettes for your colors**
 
-Given an input color it calculates its palette approaching the logic of [Google Material Design Color Palettes][mdpalettes].
+Given an input color it calculates its palette approaching the logic of **[Google Material Design Color Palettes][mdpalettes]**.
 
-Since the algorithm behind their generation is not known this module approximates the colors values.
+**Since the algorithm behind their generation is not (yet) known this module approximates the colors values**.
 
 It works everywhere: browsers, node, and so on.
 
@@ -18,23 +18,23 @@ npm install material-palette
 
 ## API
 
-This module exports a single function, the generator.
+This module exports a single function, the material palette generator.
 
 ### `materialpalette({ h: number, s: number, l: number })`
 
-It takes an object containing the h, s, and l fields. Destructure it and generates your material palette.
+- It takes an object containing the h, s, and l fields
 
-The field **h** must be a numeric into **[0, 360]**.
+    - The field **h** must be a numeric into **[0, 360]**.
 
-The fields **s** and **l** must be a numeric into **[0, 100]**.
+    - The fields **s** and **l** must be numerics into **[0, 100]**.
 
-It returns an object containing all the 14 palette variants (e.g., 50, 100, 200, ..., A700).
+- It returns an object containing all the 14 palette variants (e.g., 50, 100, 200, ..., A700)
 
 As always, more details **reading the tests** ...
 
 ## Example
 
-Suppose you want to generate a material palette for **hsl(87, 100%, 22%)** color (i.e. **#**).
+Suppose you want to generate a material palette for **hsl(87, 100%, 22%)** color (i.e. **#3E7000**).
 
 First of all import the generator.
 
@@ -70,6 +70,8 @@ Which results in the following object ...
   'A700': { h: 92, s: 100, l: 10 }
 }
 ```
+
+![Material Colors Palette for #E37000](palette-3e7000.png)
 
 ## License
 
