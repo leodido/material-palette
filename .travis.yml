@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- stable
+- '4'
+- '0.12'
+before_install:
+  - npm prune
+  - npm set progress=false
+  - npm install -g npm@latest
+after_success:
+  - npm run coverage
+deploy:
+  provider: npm
+  email: leodidonato@gmail.com
+  api_key:
+    secure: Yl4uSIdIxIA4vEZH/co+KVZiBGCuJ22eRX8FOzJy7LCh9XF44Sm4PmUXGkjE7HIeSLabath2NascFoqVgSCc6bSaFSQV9y6+X/tC2f7d/v6Ktv1uN95ZAUe8I5aEZ6wOrzM/D7dncLXVMnWaRS9BpGFfnpXKJVzH+elvYVNYBN9m1LF/9kbMNmr1A54fWygkWYWOHN3Zw0v1i6BzKGVrW7LPahnAShjWhnaa9xlwiMnvGRAKwaOJ7lalvoV2cBeetUenmybi/cU9TOgREy7/cycLhChbhxDHW57fwd7iM1n/eP+XvpcBlI7dmXSbqiXWZSExgISGYVoj2pZMawa+8AyENlJyw7bU78WigNi4E1lDUiCLPLp6YnDzLrsrTtR/gQQrQkVzp9Q4Ho09Gga4zg+iYIJ4WvOFgfJ1/qjyR7/ta9SP+F8GqVikoedGcZZzIMvHWjq5iC+IVOAAd08LVAOKDfScdTu3fYBcNQ5qNk8W+3hk5naX+YwhuBr1XALDxas/vKyFE0//10JtAdhRLkQHxdyaidi5iALeSpGbEEGR0BvxJigXJydSo+AqCBuhA0nSiGUTf4DxQ6ItYgFhuP6VmPUEiSovfA1fQgpGnRyNdluN4cDhwC2VqClcw2NSDJcbv4MEGldQGNAmWgzU6mDpeWb7XkqybMevkZRmE/Y=
+  on:
+    tags: true
+    repo: leodido/material-palette
