@@ -1,4 +1,12 @@
-# materialpalette({ h, s, l }) [![CI](https://img.shields.io/travis/leodido/material-palette/master.svg?style=flat-square)][ci] [![NPM](https://img.shields.io/npm/v/material-palette.svg?style=flat-square)][npm] [![Coveralls branch](https://img.shields.io/coveralls/leodido/material-palette/master.svg?style=flat-square)][coveralls]
+<h1 align="center">
+	<br>
+	<img width="500" src="https://cdn.rawgit.com/leodido/material-palette/develop/media/logo.png" alt="Material Palette Generator">
+	<br>
+	<br>
+	<br>
+</h1>
+
+[![CI](https://img.shields.io/travis/leodido/material-palette/master.svg?style=flat-square)][ci] [![NPM](https://img.shields.io/npm/v/material-palette.svg?style=flat-square)][npm] [![Coveralls branch](https://img.shields.io/coveralls/leodido/material-palette/master.svg?style=flat-square)][coveralls]
 
 > **Generates material palettes for your colors**
 
