@@ -71,7 +71,11 @@ Which results in the following object ...
 }
 ```
 
+Matching, visually ...
+
 ![Material Colors Palette for #3E7000](palette-3e7000.png)
+
+It's cool, isn't it?
 
 ## License
 
