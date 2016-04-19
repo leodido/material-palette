@@ -4,16 +4,16 @@ node_js:
 - '4'
 - '0.12'
 before_install:
-  - npm prune
-  - npm set progress=false
-  - npm install -g npm@latest
+- npm prune
+- npm set progress=false
+- npm install -g npm@latest
 after_success:
-  - npm run coverage
+- npm run coverage
 deploy:
   provider: npm
   email: leodidonato@gmail.com
   api_key:
-    secure: Yl4uSIdIxIA4vEZH/co+KVZiBGCuJ22eRX8FOzJy7LCh9XF44Sm4PmUXGkjE7HIeSLabath2NascFoqVgSCc6bSaFSQV9y6+X/tC2f7d/v6Ktv1uN95ZAUe8I5aEZ6wOrzM/D7dncLXVMnWaRS9BpGFfnpXKJVzH+elvYVNYBN9m1LF/9kbMNmr1A54fWygkWYWOHN3Zw0v1i6BzKGVrW7LPahnAShjWhnaa9xlwiMnvGRAKwaOJ7lalvoV2cBeetUenmybi/cU9TOgREy7/cycLhChbhxDHW57fwd7iM1n/eP+XvpcBlI7dmXSbqiXWZSExgISGYVoj2pZMawa+8AyENlJyw7bU78WigNi4E1lDUiCLPLp6YnDzLrsrTtR/gQQrQkVzp9Q4Ho09Gga4zg+iYIJ4WvOFgfJ1/qjyR7/ta9SP+F8GqVikoedGcZZzIMvHWjq5iC+IVOAAd08LVAOKDfScdTu3fYBcNQ5qNk8W+3hk5naX+YwhuBr1XALDxas/vKyFE0//10JtAdhRLkQHxdyaidi5iALeSpGbEEGR0BvxJigXJydSo+AqCBuhA0nSiGUTf4DxQ6ItYgFhuP6VmPUEiSovfA1fQgpGnRyNdluN4cDhwC2VqClcw2NSDJcbv4MEGldQGNAmWgzU6mDpeWb7XkqybMevkZRmE/Y=
+    secure: Zvtr32dehV9/MvgFVIE6q9C2CxComKu2aOnAq9FDbolmwNFE+sz8kRUJQBBwyXXlxIkgTJRdRUG1DYZDyBO9lptwukfmvPIg92v23cMACEX2NOXqKwZI9KMo9xIt09S+16FhGjNP1obg3hfJcCapt9IyJhTb/qTc7iuWg6171WuAC/ACMry0/Qt5EPWQ38/cbOWmaHI3RxarZATLTbChCVY92AXHybjsF3tBgCJgBx8+0CD0X9RBsA3bO4nJEB/ueE7hVXdu6xcmi/AYM6XTCBtnc6omZHnbAc2qpiCDgZE0g60mwinhHpmxKhBPnPRS46tZHAUY57XocyE1Ka2hdUf3fTnu62OAPr33Mbp/OAYlLP7XZP+ytLhgPUq4T4cjjFu7f0rfnkv9V7GHKoUKFBjsrjcA0W3p+H28VGcnCALjdX6jn44y9RjRYkoDt5YdH8udKj3uFRV1an36etBBqT9FPNkaq+9ExwhVnCrbAfS/bVkVJfBwwAQqWvA9MQ4grQTBGqJE/TgZrR43+EwZD8eutR0daKdMvVl7r82u/CUAgesQ2ikOWA/krJ1dyF7goPL1PMr9w67iM0omnct/QPhwM+EoiMA9kaIjxdOYFaRzBMI58v8WLuJ5DRch7mUiqgh3EZL9jzYa24g6TGCWqWNpblPtHPDb9oWQzLMHba8=
   on:
     tags: true
     repo: leodido/material-palette

@@ -18,7 +18,7 @@
     "distrib": "rollup -c rollup.config.js -o index.js",
     "pretest": "npm run lint && npm run develop",
     "test": "nyc ava --verbose --serial",
-    "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "report": "nyc report --reporter=html",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "prepublish": "npm run distrib"
@@ -35,11 +35,6 @@
     "rollup": "0.25.x",
     "rollup-plugin-babel": "2.4.x",
     "conventional-changelog-cli": "1.1.x"
-  },
-  "ava": {
-    "require": [
-      "babel-core/register"
-    ]
   },
   "eslintConfig": {
     "extends": "eslint-config-defaults",
