@@ -33,7 +33,8 @@
     "eslint-config-defaults": "9.0.x",
     "nyc": "6.4.x",
     "rollup": "0.25.x",
-    "rollup-plugin-babel": "2.4.x"
+    "rollup-plugin-babel": "2.4.x",
+    "conventional-changelog-cli": "1.1.x"
   },
   "ava": {
     "require": [
