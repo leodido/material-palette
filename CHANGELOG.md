@@ -15,12 +15,9 @@
 
 ### Docs
 
-* Initial readme ([a9018b1b3466e9af520e8bf64b1ab6e0326254ee](https://github.com/leodido/material-palette/commit/a9018b1b3466e9af520e8bf64b1ab6e0326254ee))
+* CHANGELOG ([0667b25b8c0513942394c269321c4bd7052f19f9](https://github.com/leodido/material-palette/commit/0667b25b8c0513942394c269321c4bd7052f19f9))
 * License ([ecffad4d70e04f6abe96bf758cbbf8d075937df6](https://github.com/leodido/material-palette/commit/ecffad4d70e04f6abe96bf758cbbf8d075937df6))
-* Palette image ([573a03311486b619103adb855158e4490f386920](https://github.com/leodido/material-palette/commit/573a03311486b619103adb855158e4490f386920))
 * README ([45cd9cb1399b847afdcab6cb3c3af57312d4c59c](https://github.com/leodido/material-palette/commit/45cd9cb1399b847afdcab6cb3c3af57312d4c59c))
-* README improvements ([078b44f8c13ca4e47e1df25743aa566d206bb01e](https://github.com/leodido/material-palette/commit/078b44f8c13ca4e47e1df25743aa566d206bb01e))
-* README improvements ([5e505e9f904b10cb5d01cb7dfa8fdee6ceb845a4](https://github.com/leodido/material-palette/commit/5e505e9f904b10cb5d01cb7dfa8fdee6ceb845a4))
 
 ### New
 
@@ -29,6 +26,3 @@
 * Material palette generator ([d152a08530304b0a3a56197fb98b87cf5e1eb153](https://github.com/leodido/material-palette/commit/d152a08530304b0a3a56197fb98b87cf5e1eb153))
 * Tests ([3eebdeb6b719694da16fc59870326ba9af2de99b](https://github.com/leodido/material-palette/commit/3eebdeb6b719694da16fc59870326ba9af2de99b))
 * Travis and coveralls integration  ([e730c89297e1d8f0da72bb7c6760b9636e2f221b](https://github.com/leodido/material-palette/commit/e730c89297e1d8f0da72bb7c6760b9636e2f221b)), closes [#3](https://github.com/leodido/material-palette/issues/3) [#4](https://github.com/leodido/material-palette/issues/4)
-
-
-
