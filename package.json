@@ -1,32 +1,44 @@
 {
   "name": "material-palette",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Generate material palettes for your colors",
   "main": "index.js",
   "jsnext:main": "index.m.js",
-  "scripts": {
-    "clean": "rm -f index.js",
-    "lint": "eslint index.m.js test.js",
-    "pretest": "npm run lint && npm run build",
-    "test": "ava --verbose --serial",
-    "build": "rollup -c rollup.config.js -o index.js"
-  },
   "author": "Leo Di Donato <leodidonato@gmail.com> (http://github.com/leodido)",
   "repository": "leodido/material-palette",
   "bugs": {
     "url": "https://github.com/leodido/material-palette/issues"
   },
   "homepage": "https://github.com/leodido/material-palette",
-  "dependencies": {},
   "license": "MIT",
+  "scripts": {
+    "clean": "rm -f index.js *.log && rm -rf coverage .nyc_output",
+    "lint": "eslint index.m.js test.js rollup.config.js",
+    "develop": "BUILD_ENV=develop rollup -c rollup.config.js -o index.js",
+    "distrib": "rollup -c rollup.config.js -o index.js",
+    "pretest": "npm run lint && npm run develop",
+    "test": "nyc ava --verbose --serial",
+    "coverage": "nyc report --cache --reporter=text-lcov | coveralls",
+    "report": "nyc report --reporter=html",
+    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
+    "prepublish": "npm run distrib"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "ava": "^0.14.0",
-    "babel-eslint": "^6.0.2",
-    "babel-preset-es2015-rollup": "^1.1.1",
-    "eslint": "^2.8.0",
-    "eslint-config-defaults": "^9.0.0",
-    "rollup": "^0.25.8",
-    "rollup-plugin-babel": "^2.4.0"
+    "ava": "0.14.x",
+    "babel-eslint": "6.0.x",
+    "babel-preset-es2015-rollup": "1.1.x",
+    "coveralls": "2.11.x",
+    "eslint": "2.8.x",
+    "eslint-config-defaults": "9.0.x",
+    "nyc": "6.4.x",
+    "rollup": "0.25.x",
+    "rollup-plugin-babel": "2.4.x"
+  },
+  "ava": {
+    "require": [
+      "babel-core/register"
+    ]
   },
   "eslintConfig": {
     "extends": "eslint-config-defaults",
@@ -39,5 +51,20 @@
     "env": {
       "es6": true
     }
-  }
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "keywords": [
+    "material design",
+    "palette",
+    "colors",
+    "generator",
+    "material colors",
+    "material palette",
+    "material",
+    "MD",
+    "HSL",
+    "material palette generator"
+  ]
 }

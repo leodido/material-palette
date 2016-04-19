@@ -3,4 +3,6 @@ node_modules/
 npm-debug.log
 *.sublime*
 .idea
-index.js
+.nyc_output
+coverage/
+/index.js

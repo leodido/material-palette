@@ -4,11 +4,10 @@
  * Minimize the maximum possible loss
  *
  * @param      {number}             val           The input value to test
- * @param      {number}             [max=100]     The maximum
  *
- * @return     {number}             A number between 0 and max
+ * @return     {number}             A number between 0 and 100
  */
-const minimax = (val, max = 100) => Math.min(max, Math.max(0, val))
+const minimax = val => Math.min(100, Math.max(0, val))
 
 /**
  * Material Palette Generator
