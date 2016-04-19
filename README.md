@@ -30,7 +30,7 @@ This module exports a single function, the material palette generator.
 
 - It returns an object containing all the 14 palette variants (e.g., 50, 100, 200, ..., A700)
 
-As always, more details **reading the tests** ...
+As always, more details **reading the [tests](test.js)** ...
 
 ## Example
 
@@ -71,7 +71,7 @@ Which results in the following object ...
 }
 ```
 
-![Material Colors Palette for #E37000](palette-3e7000.png)
+![Material Colors Palette for #3E7000](palette-3e7000.png)
 
 ## License
 
