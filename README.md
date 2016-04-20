@@ -91,7 +91,7 @@ MIT © Leonardo Di Donato
 
 ---
 
-[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/material-palette-gen?flat)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/material-palette?flat)](https://github.com/igrigorik/ga-beacon)
 
 [npm]:        https://npmjs.org/package/material-palette
 [ci]:         https://travis-ci.org/leodido/material-palette
