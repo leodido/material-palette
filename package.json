@@ -29,7 +29,7 @@
     "babel-eslint": "6.0.x",
     "babel-preset-es2015-rollup": "1.1.x",
     "coveralls": "2.11.x",
-    "eslint": "2.8.x",
+    "eslint": "6.8.x",
     "eslint-config-defaults": "9.0.x",
     "nyc": "6.4.x",
     "rollup": "0.25.x",
